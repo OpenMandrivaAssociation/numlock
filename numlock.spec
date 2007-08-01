@@ -19,7 +19,6 @@ BuildRoot: %{_tmppath}/%{name}-buildroot
 autoReq: no
 Requires(post): rpm-helper
 Requires(preun): rpm-helper
-Requires: fileutils console-tools glibc
 Obsoletes: NumLock
 Provides: NumLock = %{version}-%{release}
 
