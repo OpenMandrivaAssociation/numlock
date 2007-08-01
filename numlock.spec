@@ -2,7 +2,7 @@
 
 %define name numlock
 %define version 2.0
-%define release %mkrel 17
+%define release %mkrel 18
 
 Summary: Numlock key locker
 Name: %{name}
