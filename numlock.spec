@@ -14,6 +14,7 @@ Group: System/Configuration/Boot and Init
 Source0: %{name}-%{version}.tar.bz2
 BuildRequires: libx11-devel
 BuildRequires: libxtst-devel
+BuildRoot: %{_tmppath}/%{name}-buildroot
 # do not require X11 libs
 autoReq: no
 Requires(post): rpm-helper
