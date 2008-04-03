@@ -1,8 +1,8 @@
 # !!!!!!!! WARNING THIS HAS TO BE EDITED IN THE SVN !!!!!!!!!!!
 
 %define name numlock
-%define version 2.0
-%define release %mkrel 18
+%define version 2.1
+%define release %mkrel 1
 
 Summary: Numlock key locker
 Name: %{name}
