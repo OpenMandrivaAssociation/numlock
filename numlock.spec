@@ -1,8 +1,8 @@
 # !!!!!!!! WARNING THIS HAS TO BE EDITED IN THE SVN !!!!!!!!!!!
 
 %define name numlock
-%define version 2.1.1
-%define release %mkrel 3
+%define version 2.1.2
+%define release %mkrel 1
 
 Summary: Numlock key locker
 Name: %{name}
@@ -43,6 +43,9 @@ make install TOP=$RPM_BUILD_ROOT INITRDDIR=%{_initrddir}
 
 %preun
 %_preun_service numlock
+
+%triggerpostun -- numlock < 2.1.2-1mdv
+/sbin/chkconfig --level 7 numlock reset
 
 %clean
 rm -rf $RPM_BUILD_ROOT
