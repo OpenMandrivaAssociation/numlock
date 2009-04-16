@@ -2,7 +2,7 @@
 
 %define name numlock
 %define version 2.1.2
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: Numlock key locker
 Name: %{name}
@@ -44,8 +44,10 @@ make install TOP=$RPM_BUILD_ROOT INITRDDIR=%{_initrddir}
 %preun
 %_preun_service numlock
 
-%triggerpostun -- numlock < 2.1.2-1mdv
-/sbin/chkconfig --level 7 numlock reset
+%triggerpostun -- numlock < 2.1.2-2mdv
+if [ -L "/etc/rc.d/rc5.d/*numlock" ]; then
+ /sbin/chkconfig --level 7 numlock reset
+fi
 
 %clean
 rm -rf $RPM_BUILD_ROOT
