@@ -35,8 +35,8 @@ NumLock is safe for laptops since it is disabled by default.
 make CFLAGS="$RPM_OPT_FLAGS"
 
 %install
-rm -rf $RPM_BUILD_ROOT
-make install TOP=$RPM_BUILD_ROOT INITRDDIR=%{_initrddir}
+rm -rf %{buildroot}
+make install TOP=%{buildroot} INITRDDIR=%{_initrddir}
 
 %post
 %_post_service numlock
@@ -50,7 +50,7 @@ if [ -L "/etc/rc.d/rc5.d/*numlock" ]; then
 fi
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(755,root,root)
