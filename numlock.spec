@@ -3,7 +3,7 @@
 Summary:	Numlock key locker
 Name:		numlock
 Version:	2.1.2
-Release:	12
+Release:	13
 License:	GPL
 Url:		http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/numlock/
 Group:		System/Configuration/Boot and Init
