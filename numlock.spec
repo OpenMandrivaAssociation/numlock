@@ -4,7 +4,7 @@ Version:	2.1.2
 Release:	23
 License:	GPLv2
 Group:		System/Configuration/Boot and Init
-Url:		http://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/numlock/
+Url:		https://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/numlock/
 Source0:	%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xi)
