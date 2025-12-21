@@ -6,6 +6,7 @@ License:	GPLv2
 Group:		System/Configuration/Boot and Init
 Url:		https://svn.mandriva.com/cgi-bin/viewvc.cgi/soft/numlock/
 Source0:	%{name}-%{version}.tar.bz2
+BuildRequires:	make
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xi)
 BuildRequires:	pkgconfig(xtst)
